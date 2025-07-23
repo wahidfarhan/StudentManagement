@@ -1,0 +1,590 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>Form</class>
+ <widget class="QWidget" name="Form">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>1001</width>
+    <height>842</height>
+   </rect>
+  </property>
+  <property name="minimumSize">
+   <size>
+    <width>1001</width>
+    <height>842</height>
+   </size>
+  </property>
+  <property name="windowTitle">
+   <string>Form</string>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">#frame QComboBox
+{
+	margin-left: 10px;
+	padding-left: 3px;
+	border-radius: 5px;
+	border: 1px solid white;
+	padding-top: 7px;
+	padding-bottom: 7px;
+	font-family: Sogoe Ul Semibold;
+	font-size: 17px;
+	color: white;
+}
+#frame QComboBox::drop-down
+{
+	margin-left: 15px;
+	padding-left: 3px;
+	padding-top: 7px;
+	padding-bottom: 7px;
+
+}
+#frame QLineEdit
+{
+	margin-left: 10px;
+	border-radius: 5px;
+	border: 1px solid white;
+	padding-top: 7px;
+	padding-left: 3px;
+	padding-bottom: 7px;
+	font-family: Sogoe Ul Semibold;
+	font-size: 17px;
+	color: white;
+}
+#frame QLabel
+{
+	font-family: Sogoe Ul Semibold;
+	font-size: 17px;
+}
+
+#frame
+{
+	border-radius: 10px;
+	border: 1px solid rgb(106, 110, 118);
+}
+#frame_3
+{
+	border-radius: 10px;
+	border: 1px solid rgb(106, 110, 118);
+	padding-top: 7px;
+	padding-bottom: 7px;
+}
+QWidget
+{
+	background-color:#35374B;
+}
+
+QPushButton
+{
+	background-color: rgb(0, 170, 127);
+	font-size: 14px;
+	font: bold;
+	color: white;
+	padding: 5px 10px;
+	border-radius: 5px;
+	border: 2px solid rgb(162, 162, 162);
+}
+QPushButton::hover
+{
+	border-color:rgb(206, 228, 255);
+	font-size: 15px;
+}
+QPushButton:pressed
+{
+    background-color: rgb(100, 100, 100); /* Example pressed color */
+    border-color: rgb(200, 200, 200);     /* Slight border color change */
+    padding-top: 6px;  /* Pressed effect by shifting down slightly */
+    padding-bottom: 4px;
+}
+QTableWidget
+{
+	border-radius: 5px;
+	border:1px solid rgb(106, 110, 118);
+}
+QHeaderView::section
+{
+	color: white;
+	background-color:rgb(81, 81, 81);
+	border: 1px solid;
+	border-bottom: 1px solid #505050;
+	text-align: left;
+	padding: 3px 5px;
+}
+QTableWidget::item {
+               border: 1px solid rgb(106, 110, 118);
+            }
+QTableWidget::item:selected
+{
+	background-color: #0078d7;  /* Blue background */
+    color: white;
+    
+
+}
+QTableWidget::row:hover
+{
+	background-color:#C0C9EE;
+}</string>
+  </property>
+  <layout class="QHBoxLayout" name="horizontalLayout_2">
+   <item>
+    <layout class="QVBoxLayout" name="verticalLayout">
+     <item>
+      <widget class="QFrame" name="frame_2">
+       <property name="frameShape">
+        <enum>QFrame::StyledPanel</enum>
+       </property>
+       <property name="frameShadow">
+        <enum>QFrame::Raised</enum>
+       </property>
+       <layout class="QHBoxLayout" name="horizontalLayout_3">
+        <property name="leftMargin">
+         <number>320</number>
+        </property>
+        <item>
+         <widget class="QLabel" name="label_7">
+          <property name="font">
+           <font>
+            <pointsize>20</pointsize>
+            <weight>75</weight>
+            <bold>true</bold>
+            <underline>true</underline>
+           </font>
+          </property>
+          <property name="styleSheet">
+           <string notr="true">color: rgb(255, 255, 255);</string>
+          </property>
+          <property name="text">
+           <string>Student Information</string>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <widget class="QLabel" name="label_8">
+          <property name="font">
+           <font>
+            <pointsize>18</pointsize>
+            <weight>50</weight>
+            <italic>true</italic>
+            <bold>false</bold>
+           </font>
+          </property>
+          <property name="styleSheet">
+           <string notr="true">color: rgb(255, 255, 255);
+padding-left:10px;</string>
+          </property>
+          <property name="text">
+           <string>Total Students: </string>
+          </property>
+          <property name="alignment">
+           <set>Qt::AlignLeading|Qt::AlignLeft|Qt::AlignVCenter</set>
+          </property>
+         </widget>
+        </item>
+       </layout>
+      </widget>
+     </item>
+     <item>
+      <widget class="QFrame" name="frame">
+       <property name="styleSheet">
+        <string notr="true">background-color: #31363F;</string>
+       </property>
+       <property name="frameShape">
+        <enum>QFrame::StyledPanel</enum>
+       </property>
+       <property name="frameShadow">
+        <enum>QFrame::Raised</enum>
+       </property>
+       <layout class="QGridLayout" name="gridLayout_3">
+        <property name="leftMargin">
+         <number>15</number>
+        </property>
+        <property name="topMargin">
+         <number>15</number>
+        </property>
+        <property name="rightMargin">
+         <number>15</number>
+        </property>
+        <property name="bottomMargin">
+         <number>15</number>
+        </property>
+        <property name="horizontalSpacing">
+         <number>15</number>
+        </property>
+        <property name="verticalSpacing">
+         <number>10</number>
+        </property>
+        <item row="0" column="0">
+         <layout class="QGridLayout" name="gridLayout">
+          <property name="horizontalSpacing">
+           <number>15</number>
+          </property>
+          <property name="verticalSpacing">
+           <number>40</number>
+          </property>
+          <item row="0" column="0">
+           <widget class="QLabel" name="label_3">
+            <property name="styleSheet">
+             <string notr="true">color: rgb(255, 255, 255);</string>
+            </property>
+            <property name="text">
+             <string>Student Id</string>
+            </property>
+           </widget>
+          </item>
+          <item row="0" column="1">
+           <widget class="QLineEdit" name="lineEdit"/>
+          </item>
+          <item row="1" column="0">
+           <widget class="QLabel" name="label_2">
+            <property name="styleSheet">
+             <string notr="true">color: rgb(255, 255, 255);</string>
+            </property>
+            <property name="text">
+             <string>First Name</string>
+            </property>
+           </widget>
+          </item>
+          <item row="1" column="1">
+           <widget class="QLineEdit" name="lineEdit_3"/>
+          </item>
+          <item row="2" column="0">
+           <widget class="QLabel" name="label">
+            <property name="styleSheet">
+             <string notr="true">color: rgb(255, 255, 255);</string>
+            </property>
+            <property name="text">
+             <string>Last Name</string>
+            </property>
+           </widget>
+          </item>
+          <item row="2" column="1">
+           <widget class="QLineEdit" name="lineEdit_2"/>
+          </item>
+         </layout>
+        </item>
+        <item row="0" column="1">
+         <layout class="QGridLayout" name="gridLayout_2">
+          <property name="leftMargin">
+           <number>5</number>
+          </property>
+          <property name="horizontalSpacing">
+           <number>15</number>
+          </property>
+          <property name="verticalSpacing">
+           <number>40</number>
+          </property>
+          <item row="0" column="0">
+           <widget class="QLabel" name="label_4">
+            <property name="styleSheet">
+             <string notr="true">color: rgb(255, 255, 255);</string>
+            </property>
+            <property name="text">
+             <string>District</string>
+            </property>
+           </widget>
+          </item>
+          <item row="0" column="1">
+           <widget class="QComboBox" name="comboBox">
+            <property name="styleSheet">
+             <string notr="true">color: rgb(255, 255, 255);</string>
+            </property>
+           </widget>
+          </item>
+          <item row="1" column="0">
+           <widget class="QLabel" name="label_5">
+            <property name="styleSheet">
+             <string notr="true">color: rgb(255, 255, 255);</string>
+            </property>
+            <property name="text">
+             <string>Phone Number</string>
+            </property>
+           </widget>
+          </item>
+          <item row="1" column="1">
+           <widget class="QLineEdit" name="lineEdit_4"/>
+          </item>
+          <item row="2" column="0">
+           <widget class="QLabel" name="label_6">
+            <property name="styleSheet">
+             <string notr="true">color: rgb(255, 255, 255);</string>
+            </property>
+            <property name="text">
+             <string>Email Address</string>
+            </property>
+           </widget>
+          </item>
+          <item row="2" column="1">
+           <widget class="QLineEdit" name="lineEdit_5"/>
+          </item>
+         </layout>
+        </item>
+       </layout>
+      </widget>
+     </item>
+     <item>
+      <widget class="QFrame" name="frame_3">
+       <property name="styleSheet">
+        <string notr="true">background-color: #31363F;</string>
+       </property>
+       <property name="frameShape">
+        <enum>QFrame::StyledPanel</enum>
+       </property>
+       <property name="frameShadow">
+        <enum>QFrame::Raised</enum>
+       </property>
+       <layout class="QHBoxLayout" name="horizontalLayout">
+        <property name="topMargin">
+         <number>15</number>
+        </property>
+        <property name="bottomMargin">
+         <number>15</number>
+        </property>
+        <item>
+         <widget class="QPushButton" name="Add_Button">
+          <property name="styleSheet">
+           <string notr="true">background-color: #0E2954;</string>
+          </property>
+          <property name="text">
+           <string>Add</string>
+          </property>
+          <property name="icon">
+           <iconset>
+            <normaloff>../Python Programs/Icons/add_24dp_E3E3E3_FILL0_wght400_GRAD0_opsz24.png</normaloff>../Python Programs/Icons/add_24dp_E3E3E3_FILL0_wght400_GRAD0_opsz24.png</iconset>
+          </property>
+          <property name="iconSize">
+           <size>
+            <width>30</width>
+            <height>30</height>
+           </size>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <widget class="QPushButton" name="Select_Button">
+          <property name="styleSheet">
+           <string notr="true">background-color: #0E2954;</string>
+          </property>
+          <property name="text">
+           <string>Load</string>
+          </property>
+          <property name="icon">
+           <iconset>
+            <normaloff>../Python Programs/Icons/select_24dp_E3E3E3_FILL0_wght400_GRAD0_opsz24.png</normaloff>../Python Programs/Icons/select_24dp_E3E3E3_FILL0_wght400_GRAD0_opsz24.png</iconset>
+          </property>
+          <property name="iconSize">
+           <size>
+            <width>30</width>
+            <height>30</height>
+           </size>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <widget class="QPushButton" name="Search_Button">
+          <property name="styleSheet">
+           <string notr="true">background-color: #0E2954;</string>
+          </property>
+          <property name="text">
+           <string>Search</string>
+          </property>
+          <property name="icon">
+           <iconset>
+            <normaloff>../Python Programs/Icons/search_24dp_E3E3E3_FILL0_wght400_GRAD0_opsz24.png</normaloff>../Python Programs/Icons/search_24dp_E3E3E3_FILL0_wght400_GRAD0_opsz24.png</iconset>
+          </property>
+          <property name="iconSize">
+           <size>
+            <width>30</width>
+            <height>30</height>
+           </size>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <widget class="QPushButton" name="Update_Button">
+          <property name="styleSheet">
+           <string notr="true">background-color: #0E2954;</string>
+          </property>
+          <property name="text">
+           <string>Update</string>
+          </property>
+          <property name="icon">
+           <iconset>
+            <normaloff>../Python Programs/Icons/update_24dp_E3E3E3_FILL0_wght400_GRAD0_opsz24.png</normaloff>../Python Programs/Icons/update_24dp_E3E3E3_FILL0_wght400_GRAD0_opsz24.png</iconset>
+          </property>
+          <property name="iconSize">
+           <size>
+            <width>30</width>
+            <height>30</height>
+           </size>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <widget class="QPushButton" name="Clear_Button">
+          <property name="styleSheet">
+           <string notr="true">background-color: #0E2954;</string>
+          </property>
+          <property name="text">
+           <string>Clear</string>
+          </property>
+          <property name="icon">
+           <iconset>
+            <normaloff>../Python Programs/Icons/clear_all_24dp_E3E3E3_FILL0_wght400_GRAD0_opsz24.png</normaloff>../Python Programs/Icons/clear_all_24dp_E3E3E3_FILL0_wght400_GRAD0_opsz24.png</iconset>
+          </property>
+          <property name="iconSize">
+           <size>
+            <width>30</width>
+            <height>30</height>
+           </size>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <widget class="QPushButton" name="pushButton_6">
+          <property name="styleSheet">
+           <string notr="true">background-color: #CD1818;</string>
+          </property>
+          <property name="text">
+           <string>Delete</string>
+          </property>
+          <property name="icon">
+           <iconset>
+            <normaloff>../Python Programs/Icons/delete_24dp_E3E3E3_FILL0_wght400_GRAD0_opsz24.png</normaloff>../Python Programs/Icons/delete_24dp_E3E3E3_FILL0_wght400_GRAD0_opsz24.png</iconset>
+          </property>
+          <property name="iconSize">
+           <size>
+            <width>30</width>
+            <height>30</height>
+           </size>
+          </property>
+         </widget>
+        </item>
+       </layout>
+      </widget>
+     </item>
+     <item>
+      <widget class="QFrame" name="frame_4">
+       <property name="styleSheet">
+        <string notr="true">background-color: #31363F;</string>
+       </property>
+       <property name="frameShape">
+        <enum>QFrame::StyledPanel</enum>
+       </property>
+       <property name="frameShadow">
+        <enum>QFrame::Raised</enum>
+       </property>
+       <layout class="QGridLayout" name="gridLayout_5">
+        <item row="0" column="0">
+         <widget class="QTableWidget" name="tableWidget">
+          <property name="mouseTracking">
+           <bool>true</bool>
+          </property>
+          <property name="tabletTracking">
+           <bool>false</bool>
+          </property>
+          <property name="focusPolicy">
+           <enum>Qt::NoFocus</enum>
+          </property>
+          <property name="editTriggers">
+           <set>QAbstractItemView::NoEditTriggers</set>
+          </property>
+          <property name="selectionMode">
+           <enum>QAbstractItemView::SingleSelection</enum>
+          </property>
+          <property name="selectionBehavior">
+           <enum>QAbstractItemView::SelectRows</enum>
+          </property>
+          <property name="showGrid">
+           <bool>false</bool>
+          </property>
+          <property name="columnCount">
+           <number>6</number>
+          </property>
+          <attribute name="horizontalHeaderVisible">
+           <bool>true</bool>
+          </attribute>
+          <attribute name="horizontalHeaderCascadingSectionResizes">
+           <bool>false</bool>
+          </attribute>
+          <attribute name="horizontalHeaderMinimumSectionSize">
+           <number>60</number>
+          </attribute>
+          <attribute name="horizontalHeaderDefaultSectionSize">
+           <number>130</number>
+          </attribute>
+          <attribute name="horizontalHeaderShowSortIndicator" stdset="0">
+           <bool>false</bool>
+          </attribute>
+          <attribute name="horizontalHeaderStretchLastSection">
+           <bool>true</bool>
+          </attribute>
+          <attribute name="verticalHeaderVisible">
+           <bool>false</bool>
+          </attribute>
+          <attribute name="verticalHeaderCascadingSectionResizes">
+           <bool>false</bool>
+          </attribute>
+          <attribute name="verticalHeaderStretchLastSection">
+           <bool>true</bool>
+          </attribute>
+          <column>
+           <property name="text">
+            <string>Student ID</string>
+           </property>
+           <property name="textAlignment">
+            <set>AlignCenter</set>
+           </property>
+          </column>
+          <column>
+           <property name="text">
+            <string>First Name</string>
+           </property>
+           <property name="textAlignment">
+            <set>AlignCenter</set>
+           </property>
+          </column>
+          <column>
+           <property name="text">
+            <string>Last Name</string>
+           </property>
+           <property name="textAlignment">
+            <set>AlignCenter</set>
+           </property>
+          </column>
+          <column>
+           <property name="text">
+            <string>District</string>
+           </property>
+           <property name="textAlignment">
+            <set>AlignCenter</set>
+           </property>
+          </column>
+          <column>
+           <property name="text">
+            <string>Phone Number</string>
+           </property>
+           <property name="textAlignment">
+            <set>AlignCenter</set>
+           </property>
+          </column>
+          <column>
+           <property name="text">
+            <string>Email Address</string>
+           </property>
+           <property name="textAlignment">
+            <set>AlignCenter</set>
+           </property>
+          </column>
+         </widget>
+        </item>
+       </layout>
+      </widget>
+     </item>
+    </layout>
+   </item>
+  </layout>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>
