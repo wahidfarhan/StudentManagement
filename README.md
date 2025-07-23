@@ -26,6 +26,7 @@ A simple yet powerful Student Management System built using Python and PyQt5. Th
 3. Run the program:
    python main.py
 
+<img width="1908" height="1100" alt="image" src="https://github.com/user-attachments/assets/5dd28466-cf7a-4f85-b562-97cda876a5ab" />
 
 
 💡 Future Improvements
